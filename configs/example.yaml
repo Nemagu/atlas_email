@@ -4,7 +4,7 @@ logging:
 nats:
   host: localhost
   port: 4222
-  connect_name: transactions_email
+  connect_name: atlas_email
   reconnect_time_wait: 5
   connect_timeout: 5
   ping_interval: 120

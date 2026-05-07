@@ -10,7 +10,7 @@ from pathlib import Path
 import pytest
 from aiosmtpd.controller import Controller
 
-PROJECT_NAME = "transactions_email"
+PROJECT_NAME = "atlas_email"
 
 
 def find_free_port() -> int:
