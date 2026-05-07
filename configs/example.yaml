@@ -1,0 +1,27 @@
+logging:
+  level: info
+
+nats:
+  host: localhost
+  port: 4222
+  connect_name: transactions_email
+  reconnect_time_wait: 5
+  connect_timeout: 5
+  ping_interval: 120
+  max_outstanding_pings: 3
+  healthcheck_file: /tmp/nats_worker_healthbeat
+  loop_sleep_duration: 2
+
+email:
+  stream_name: email
+  main_subject_name: email
+  send_subject_name: send
+
+smtp:
+  host: smtp.example.com
+  port: 587
+  username: noreply@example.com
+  password_file: /run/secrets/smtp_password
+  sender: noreply@example.com
+  use_tls: true
+  timeout: 10
